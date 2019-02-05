@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:700|BioRhyme:300');
+
+
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	margin-top: -21px;
+	
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #EBF2FA;
+	font-family: 'BioRhyme', serif;
+	color: #3454D1;
+}
+h1 {
+	font-size: 45px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Arvo', serif;
+	padding: 5px;
+	margin: 0px;
+} 
+h2 {
+	font-size: 30px;
+}
+p {
+	padding: 5px;
+	margin: 0px;
+	font-size: 18px;
+}
+.filmpjegerrit {
+	height: 50vh;
+	width: 50vh;
+	margin: 10px auto;
+	border-radius: 100%;
+	border: 2px solid #EBF2FA;
+	background: url(gerritdemeeuw.gif);
+	display: none;
+	
+}
+.fotogerrit {
+	height: 50vh;
+	width: 50vh;
+	margin: 0px auto;
+	border-radius: 100%;
+	border: 2px solid #EBF2FA;
+	background: url(gerritdemeeuw2.gif);
+	margin: 5px auto;
+}
+
+header {
+	background: #3454D1;
+	color: #EBF2FA;
+	padding: 10px;
+	clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 4vw)
+	);
+}
+article header {
+	clip-path: none;
+}
+section.gerrit article header {
+	color: #3454D1;
+	background: #EBF2FA;
+}
+header article {
+	width: 90%;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 20vh;
+	margin-bottom: 20vh;
+}
+main article {
+	width: 80%;
+	margin: 0px auto;
+			text-align: left;
+
+	padding-top: 7vh;
+	padding-bottom: 7vh;
+
+}
+main section {
+	padding: 10px;
+	clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 4vw)
+	);
+}
+
+
+
+main section.gerrit {
+
+	background: #3454D1;
+	color: #EBF2FA;
+
+}
+a {
+	text-decoration: none;
+	color: #3454D1;
+	font-weight: bold;
+}
+.gerrit a {
+	color: #EBF2FA;
+}
+footer {
+	background: #EBF2FA;
+
+	color: #3454D1;
+	padding: 10px;
+	
+	border-top: 1px dotted rgba(52, 84, 209, 0.3);
+}
+footer article {
+	width:80%; 
+	margin: 0px auto;
+}
+img {
+	display: none;
+	border: 5px solid rgba(144, 161, 229, 0.3);
+	transform: rotate(2deg);
+}
+@media screen and (min-width: 1200px) {
+	section.gerrit article header	 {
+	
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 60% 100%);
+	text-align: right;
+	
+}
+img {
+	width: 25%;
+	display: block;
+}
+.filmpjegerrit {
+	display: block;
+}
+article header {
+	clip-path: polygon(0 0, 50% 0%, 40% 100%, 0% 100%);
+	text-align: left;
+}
+}
